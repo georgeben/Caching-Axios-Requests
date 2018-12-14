@@ -10,7 +10,10 @@ const app = express();
 app.use(logger('dev'));
 
 app.get('/', (req, res) => {
-    res.send('Hello world');
+    res.send(`<form action="/search" method="GET">
+                <p>This project uses the <a href="https://jsonplaceholder.typicode.com">JSON placeholder API</a></p>
+                <input type="number" placeholder="Type in a user ID e.g 1, 2, 3" name="uid" >
+            </form>`);
 });
 
 app.get('/search', (req, res) =>{
