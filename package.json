@@ -1,5 +1,5 @@
 {
-  "name": "wikisearch",
+  "name": "caching-axios-requests",
   "version": "1.0.0",
   "description": "Cache queries to wikipedia with redis",
   "main": "app.js",
