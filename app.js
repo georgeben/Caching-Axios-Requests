@@ -47,6 +47,10 @@ app.get('/search', (req, res) =>{
             })
         }
     })
+});
+
+app.use((req, res, next) =>{
+    res.send('The page you are requesting doesnt exist');
 })
 
 const server = app.listen(5000, () => console.log(`App started on port ${server.address().port}`));
